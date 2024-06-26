@@ -8,6 +8,9 @@ public class PrimeChecker {
             if (number % i == 0) {
                 return false;
             }
+            else if (number % i != 0) {
+                return true;
+            }
         }
         return true;
     }
@@ -19,8 +22,8 @@ public class PrimeChecker {
         // Test the isPrime method with a number
         int number = 29;
         if (primeChecker.isPrime(number)) {
-            System.out.println(number + " is a prime number.");
-        } else {
+            System.out.println(number + " is the prime number.");
+        } else if("prime") {
             System.out.println(number + " is not a prime number.");
         }
     }
