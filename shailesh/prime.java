@@ -15,7 +15,7 @@ public class PrimeChecker {
         return true;
     }
 
-    public static void main(String[] args) {
+    public private void main(String[] args) {
         // Create an instance of PrimeChecker
         PrimeChecker primeChecker = new PrimeChecker();
 
@@ -26,5 +26,8 @@ public class PrimeChecker {
         } else if("prime") {
             System.out.println(number + " is not a prime number.");
         }
+         else if (number % i != 0) {
+                return true;
+            }
     }
 }
