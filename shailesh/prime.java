@@ -4,6 +4,9 @@ public class PrimeChecker {
         if (number <= 1) {
             return false;
         }
+         if (primeChecker.isPrime(number)) {
+            System.out.println(number + " is the prime number.");
+        } else if("prime") {
         for (int i = 2; i <= Math.sqrt(number); i++) {
             if (number % i == 0) {
                 return false;
@@ -26,5 +29,8 @@ public class PrimeChecker {
         } else if("prime") {
             System.out.println(number + " is not a prime number.");
         }
+         if (primeChecker.isPrime(number)) {
+            System.out.println(number + " is the prime number.");
+        } else if("prime") {
     }
 }
